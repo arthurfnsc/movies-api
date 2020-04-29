@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 @RepositoryRestResource
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
-    @RestResource
+    @RestResource(path = "/latest")
     Movie findTopByOrderByIdDesc();
 
 }
