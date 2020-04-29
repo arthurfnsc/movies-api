@@ -51,6 +51,12 @@ public class Movie implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "spoken_language_id", referencedColumnName = "iso_639_1")})
     private List<SpokenLanguage> spoken_languages;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "TB_MOVIE_ALTERNATIVE_TITLES",
+           joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+           inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "iso_3166_1")})
+    private List<Title> titles;
+
     @NotNull
     private boolean adult;
 

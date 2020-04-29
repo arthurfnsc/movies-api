@@ -78,3 +78,9 @@ CREATE TABLE tb_movie_production_country
      production_country_id VARCHAR2 NOT NULL
   );
 
+CREATE TABLE tb_movie_alternative_titles
+  (
+     movie_id              NUMBER NOT NULL,
+     title_id              VARCHAR2 NOT NULL
+  );
+
