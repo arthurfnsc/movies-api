@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @Getter
 @Setter
@@ -13,7 +14,9 @@ import javax.validation.constraints.NotNull;
 @SequenceGenerator(name = "seqGenre",
         sequenceName = "SEQ_GENRE",
         allocationSize = 1)
-public class Genre {
+public class Genre implements Serializable {
+
+    private static final long serialVersionUID = -8070511642405385975L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqGenre")
