@@ -7,7 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Getter
@@ -25,6 +25,32 @@ public class Movie implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqMovie")
     private Long id;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "TB_MOVIE_GENRE",
+            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "genre_id", referencedColumnName = "id")})
+    private List<Genre> genres;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "TB_MOVIE_PRODUCTION_COMPANY",
+            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "production_company_id", referencedColumnName = "id")})
+    private List<ProductionCompany> production_companies;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "TB_MOVIE_PRODUCTION_COUNTRY",
+            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "production_country_id", referencedColumnName = "iso_3166_1")})
+    private List<ProductionCountry> production_countries;
+
+    private Long revenue;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "TB_MOVIE_SPOKEN_LANGUAGE",
+            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "spoken_language_id", referencedColumnName = "iso_639_1")})
+    private List<SpokenLanguage> spoken_languages;
+
     @NotNull
     private boolean adult;
 
@@ -36,7 +62,7 @@ public class Movie implements Serializable {
     private String original_title;
 
     @NotNull
-    private Date releaseDate;
+    private LocalDate releaseDate;
 
     @NotNull
     private int runtime;
@@ -44,21 +70,15 @@ public class Movie implements Serializable {
     @NotNull
     private String title;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "TB_MOVIE_GENRE",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "genre_id", referencedColumnName = "id")})
-    private List<Genre> genres;
-
     private Long budget;
+
+    private String homepage;
 
     private String imdb_id;
 
     private String overview;
 
     private double popularity;
-
-    private Long revenue;
 
     private String status;
 

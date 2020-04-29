@@ -1,4 +1,5 @@
-INSERT INTO tb_spoken_language 
+-- SPOKEN LANGUAGE
+INSERT INTO tb_spoken_language
             (iso_639_1, 
              NAME) 
 VALUES      ('aa', 
@@ -1298,4 +1299,1482 @@ INSERT INTO tb_spoken_language
             (iso_639_1, 
              NAME) 
 VALUES      ('zu', 
-             'Zulu') 
+             'Zulu');
+
+-- PRODUCTION COUNTRY
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Afghanistan',
+             'AF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('AnlandIslands',
+             'AX');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Albania',
+             'AL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Algeria',
+             'DZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('AmericanSamoa',
+             'AS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Andorra',
+             'AD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Angola',
+             'AO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Anguilla',
+             'AI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Antarctica',
+             'AQ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('AntiguaandBarbuda',
+             'AG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Argentina',
+             'AR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Armenia',
+             'AM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Aruba',
+             'AW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Australia',
+             'AU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Austria',
+             'AT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Azerbaijan',
+             'AZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bahamas',
+             'BS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bahrain',
+             'BH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bangladesh',
+             'BD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Barbados',
+             'BB');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Belarus',
+             'BY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Belgium',
+             'BE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Belize',
+             'BZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Benin',
+             'BJ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bermuda',
+             'BM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bhutan',
+             'BT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bolivia, Plurinational State of',
+             'BO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bonaire, Sint Eustatius and Saba',
+             'BQ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bosnia and Herzegovina',
+             'BA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Botswana',
+             'BW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('BouvetIsland',
+             'BV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Brazil',
+             'BR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('British Indian Ocean Territory',
+             'IO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Brunei Darussalam',
+             'BN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Bulgaria',
+             'BG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('BurkinaFaso',
+             'BF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Burundi',
+             'BI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cambodia',
+             'KH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cameroon',
+             'CM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Canada',
+             'CA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('CapeVerde',
+             'CV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cayman Islands',
+             'KY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Central African Republic',
+             'CF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Chad',
+             'TD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Chile',
+             'CL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('China',
+             'CN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Christmas Island',
+             'CX');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cocos (Keeling) Islands',
+             'CC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Colombia',
+             'CO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Comoros',
+             'KM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Congo',
+             'CG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Congo, the Democratic Republic of the',
+             'CD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cook Islands',
+             'CK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Costa Rica',
+             'CR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Croatia',
+             'HR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cuba',
+             'CU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Curacstwao',
+             'CW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Cyprus',
+             'CY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Czech Republic',
+             'CZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Denmark',
+             'DK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Djibouti',
+             'DJ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Dominica',
+             'DM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Dominican Republic',
+             'DO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Ecuador',
+             'EC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Egypt',
+             'EG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('El Salvador',
+             'SV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Equatorial Guinea',
+             'GQ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Eritrea',
+             'ER');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Estonia',
+             'EE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Ethiopia',
+             'ET');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Falkland Islands (Malvinas)',
+             'FK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Faroe Islands',
+             'FO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Fiji',
+             'FJ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Finland',
+             'FI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('France',
+             'FR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('French Guiana',
+             'GF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('French Polynesia',
+             'PF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('French Southern Territories',
+             'TF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Gabon',
+             'GA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Gambia',
+             'GM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Georgia',
+             'GE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Germany',
+             'DE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Ghana',
+             'GH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Gibraltar',
+             'GI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Greece',
+             'GR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Greenland',
+             'GL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Grenada',
+             'GD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guadeloupe',
+             'GP');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guam',
+             'GU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guatemala',
+             'GT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guernsey',
+             'GG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guinea',
+             'GN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guinea-Bissau',
+             'GW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Guyana',
+             'GY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Haiti',
+             'HT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Heard Island and McDonald Islands',
+             'HM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('HolySee( Vatican City State)',
+             'VA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Honduras',
+             'HN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Hong Kong',
+             'HK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Hungary',
+             'HU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Iceland',
+             'IS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('India',
+             'IN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Indonesia',
+             'ID');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Iran, Islamic Republic of',
+             'IR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Iraq',
+             'IQ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Ireland',
+             'IE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Isle of Man',
+             'IM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Israel',
+             'IL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Italy',
+             'IT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Jamaica',
+             'JM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Japan',
+             'JP');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Jersey',
+             'JE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Jordan',
+             'JO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Kazakhstan',
+             'KZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Kenya',
+             'KE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Kiribati',
+             'KI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Korea, Democratic Peoples Republic of',
+             'KP');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Korea Republic of',
+             'KR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Kuwait',
+             'KW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Kyrgyzstan',
+             'KG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Lao, Peoples Democratic Republic',
+             'LA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Latvia',
+             'LV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Lebanon',
+             'LB');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Lesotho',
+             'LS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Liberia',
+             'LR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Libya',
+             'LY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Liechtenstein',
+             'LI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Lithuania',
+             'LT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Luxembourg',
+             'LU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Macao',
+             'MO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Macedonia, the Former Yugoslav Republic of',
+             'MK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Madagascar',
+             'MG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Malawi',
+             'MW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Malaysia',
+             'MY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Maldives',
+             'MV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mali',
+             'ML');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Malta',
+             'MT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('MarshallIslands',
+             'MH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Martinique',
+             'MQ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mauritania',
+             'MR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mauritius',
+             'MU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mayotte',
+             'YT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mexico',
+             'MX');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Micronesia, Federated States of',
+             'FM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Moldova, Republic of',
+             'MD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Monaco',
+             'MC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mongolia',
+             'MN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Montenegro',
+             'ME');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Montserrat',
+             'MS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Morocco',
+             'MA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Mozambique',
+             'MZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Myanmar',
+             'MM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Namibia',
+             'NA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Nauru',
+             'NR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Nepal',
+             'NP');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Netherlands',
+             'NL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('NewCaledonia',
+             'NC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('NewZealand',
+             'NZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Nicaragua',
+             'NI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Niger',
+             'NE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Nigeria',
+             'NG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Niue',
+             'NU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Norfolk Island',
+             'NF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Northern Mariana Islands',
+             'MP');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Norway',
+             'NO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Oman',
+             'OM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Pakistan',
+             'PK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Palau',
+             'PW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Palestine, State of',
+             'PS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Panama',
+             'PA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Papua New Guinea',
+             'PG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Paraguay',
+             'PY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Peru',
+             'PE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Philippines',
+             'PH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Pitcairn',
+             'PN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Poland',
+             'PL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Portugal',
+             'PT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Puerto Rico',
+             'PR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Qatar',
+             'QA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Romania',
+             'RO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Russian Federation',
+             'RU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Rwanda',
+             'RW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saint Helena, Ascension and Trist and a Cunha',
+             'SH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saint Kitts and Nevis',
+             'KN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saint Lucia',
+             'LC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saint Martin (Frenchpart)',
+             'MF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('SaintPierreandMiquelon',
+             'PM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saint Vincent and the Grenadines',
+             'VC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Samoa',
+             'WS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('SanMarino',
+             'SM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Sao Tome and Principe',
+             'ST');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Saudi Arabia',
+             'SA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Senegal',
+             'SN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Serbia',
+             'RS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Seychelles',
+             'SC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('SierraLeone',
+             'SL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Singapore',
+             'SG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Sint Maarten(Dutchpart)',
+             'SX');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Slovakia',
+             'SK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Slovenia',
+             'SI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Solomon Islands',
+             'SB');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Somalia',
+             'SO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('South Africa',
+             'ZA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('South Georgia and the South Sandwich Islands',
+             'GS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('South Sudan',
+             'SS');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Spain',
+             'ES');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('SriLanka',
+             'LK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Sudan',
+             'SD');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Suriname',
+             'SR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Svalbard and Jan Mayen',
+             'SJ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Swaziland',
+             'SZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Sweden',
+             'SE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Switzerland',
+             'CH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Syrian Arab Republic',
+             'SY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Taiwan, Province of China',
+             'TW');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tajikistan',
+             'TJ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tanzania, United Republic of',
+             'TZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Thailand',
+             'TH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Timor-Leste',
+             'TL');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Togo',
+             'TG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tokelau',
+             'TK');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tonga',
+             'TO');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Trinidad and Tobago',
+             'TT');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tunisia',
+             'TN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Turkey',
+             'TR');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Turkmenistan',
+             'TM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Turksand Caicos Islands',
+             'TC');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Tuvalu',
+             'TV');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Uganda',
+             'UG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Ukraine',
+             'UA');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('United Arab Emirates',
+             'AE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('United Kingdom',
+             'GB');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('United States',
+             'US');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('United States Minor Outlying Islands',
+             'UM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Uruguay',
+             'UY');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Uzbekistan',
+             'UZ');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Vanuatu',
+             'VU');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Venezuela, Bolivarian Republic of',
+             'VE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('VietNam',
+             'VN');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Virgin Islands, British',
+             'VG');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Virgin Islands U.S.',
+             'VI');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Wallis and Futuna',
+             'WF');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('WesternSahara',
+             'EH');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Yemen',
+             'YE');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Zambia',
+             'ZM');
+
+INSERT INTO tb_production_country
+            (NAME,
+             iso_3166_1)
+VALUES      ('Zimbabwe',
+             'ZW');
