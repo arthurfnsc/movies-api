@@ -1,3 +1,17 @@
+-- GENRE
+INSERT INTO tb_genre
+            (id,
+            NAME)
+VALUES      (1, 'Drama');
+
+-- PRODUCTION COMPANY
+INSERT INTO tb_production_company
+            (id,
+            logo_path,
+            NAME,
+            origin_country)
+VALUES     (1, null, 'Fox 2000 Pictures', '');
+
 -- SPOKEN LANGUAGE
 INSERT INTO tb_spoken_language
             (iso_639_1, 

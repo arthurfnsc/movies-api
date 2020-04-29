@@ -48,21 +48,21 @@ public class Movie implements Serializable {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_SPOKEN_LANGUAGE",
             joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "spoken_language_id", referencedColumnName = "iso_639_1")})
+            inverseJoinColumns = {@JoinColumn(name = "spoken_language_id", referencedColumnName = "id")})
     private List<SpokenLanguage> spoken_languages;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_ALTERNATIVE_TITLES",
            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
-           inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "iso_3166_1")})
+           inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "id")})
     private List<Title> titles;
 
     @NotNull
     private boolean adult;
 
     @NotNull
-    @Enumerated(EnumType.STRING)
-    private LanguageEnum original_language;
+//    @Enumerated(EnumType.STRING)
+    private String original_language;
 
     @NotNull
     private String original_title;

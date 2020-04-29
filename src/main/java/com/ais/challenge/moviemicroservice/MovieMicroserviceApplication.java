@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Import;
 import springfox.documentation.spring.data.rest.configuration.SpringDataRestConfiguration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
+@SpringBootApplication
 @EnableSwagger2WebMvc
 @Import(SpringDataRestConfiguration.class)
-@SpringBootApplication
 public class MovieMicroserviceApplication {
 
 	public static void main(String[] args) {
