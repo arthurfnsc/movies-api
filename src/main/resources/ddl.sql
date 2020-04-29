@@ -23,6 +23,6 @@ CREATE TABLE tb_production_country
 
 CREATE TABLE tb_spoken_language
   (
-     iso_639_1 NUMBER NOT NULL,
+     iso_639_1 VARCHAR2 NOT NULL,
      NAME      VARCHAR2 NOT NULL
   );
