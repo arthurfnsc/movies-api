@@ -18,8 +18,9 @@ CREATE SEQUENCE seq_production_company;
 
 CREATE TABLE tb_production_country
   (
-     iso_3166_1 VARCHAR2 NOT NULL,
-     NAME       VARCHAR2 NOT NULL
+     id             NUMBER NOT NULL,
+     iso_3166_1     VARCHAR2 NOT NULL,
+     NAME           VARCHAR2
   );
 
 CREATE SEQUENCE seq_production_country;
