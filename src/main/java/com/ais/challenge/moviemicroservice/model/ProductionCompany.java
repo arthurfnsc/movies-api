@@ -19,12 +19,12 @@ public class ProductionCompany {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqProductionCompany")
     private Long id;
 
-    private String logoPath;
+    private String logo_path;
 
     @NotNull
     private String name;
 
     //TODO Add Countries Enum
-    private String originCountry;
+    private String origin_country;
 
 }
