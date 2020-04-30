@@ -1,6 +1,5 @@
 package com.ais.challenge.moviemicroservice.model;
 
-import com.ais.challenge.moviemicroservice.model.enumeration.LanguageEnum;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -53,8 +52,8 @@ public class Movie implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_ALTERNATIVE_TITLES",
-           joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
-           inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "id")})
+            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "id")})
     private List<Title> titles;
 
     @NotNull
@@ -73,7 +72,6 @@ public class Movie implements Serializable {
     @NotNull
     private int runtime;
 
-    @NotNull
     private String title;
 
     private Long budget;

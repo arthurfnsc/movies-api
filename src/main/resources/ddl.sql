@@ -60,7 +60,7 @@ CREATE TABLE tb_movie
      runtime           INT NOT NULL,
      status            VARCHAR2,
      tagline           VARCHAR2,
-     title             VARCHAR2 NOT NULL,
+     title             VARCHAR2,
      video             NUMBER,
      vote_average      NUMBER,
      vote_count        NUMBER

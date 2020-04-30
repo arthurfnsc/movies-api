@@ -4,13 +4,14 @@ import com.ais.challenge.moviemicroservice.dto.MovieDTO;
 import com.ais.challenge.moviemicroservice.exception.MovieAlreadyExistException;
 import com.ais.challenge.moviemicroservice.model.Movie;
 import com.ais.challenge.moviemicroservice.service.MovieService;
+import org.springframework.data.rest.webmvc.BasePathAwareController;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
+@BasePathAwareController
 public class MovieController {
 
     private final MovieService movieService;

@@ -11,4 +11,7 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     @RestResource(path = "/latest")
     Movie findTopByOrderByIdDesc();
 
+    @RestResource(exported = false)
+    boolean existsById(Long id);
+
 }
