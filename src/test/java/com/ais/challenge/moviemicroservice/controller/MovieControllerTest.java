@@ -1,9 +1,12 @@
 package com.ais.challenge.moviemicroservice.controller;
 
 import com.ais.challenge.moviemicroservice.MovieMicroserviceApplication;
-import com.ais.challenge.moviemicroservice.dto.*;
 import com.ais.challenge.moviemicroservice.dto.genre.GenreDto;
 import com.ais.challenge.moviemicroservice.dto.movie.MovieDto;
+import com.ais.challenge.moviemicroservice.dto.production.company.ProductionCompanyDto;
+import com.ais.challenge.moviemicroservice.dto.production.country.ProductionCountryDto;
+import com.ais.challenge.moviemicroservice.dto.spokenlanguage.SpokenLanguageDto;
+import com.ais.challenge.moviemicroservice.dto.title.TitleDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +38,7 @@ class MovieControllerTest {
         //Given
         MovieDto movieDTO = buildMovieDto();
 
-        //When & //Then
+        // When & //Then
         ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
                 .post("/movies")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
@@ -44,7 +47,7 @@ class MovieControllerTest {
                 .content(objectMapper.writeValueAsBytes(movieDTO)))
                 .andExpect(status().isCreated())
                 .andExpect(header().exists("Location"))
-                .andExpect(jsonPath("$.original_title", is("Fight Club")));
+                .andExpect(jsonPath("$.originalTitle", is("Fight Club")));
 
     }
 
@@ -57,33 +60,27 @@ class MovieControllerTest {
         movieDTO.setBudget(6300000L);
         movieDTO.setHomepage("");
         movieDTO.setImdb_id("tt0137523");
-        movieDTO.setOverview("A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.");
+        movieDTO.setOverview("A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.");
         movieDTO.setStatus("Released");
         movieDTO.setTagline("How much can you know about yourself if you've never been in a fight?");
-        movieDTO.setOriginal_title("Fight Club");
-        movieDTO.setOriginal_language("en");
-        movieDTO.setRelease_date(LocalDate.of(2020, 4, 29));
+        movieDTO.setOriginalTitle("Fight Club");
+        movieDTO.setOriginalLanguage("en");
+        movieDTO.setReleaseDate(LocalDate.of(2020, 4, 29));
 
         GenreDto genreDTO = new GenreDto();
-        genreDTO.setName("Drama");
+        genreDTO.setId(1L);
 
         TitleDto titleDTO = new TitleDto();
-        titleDTO.setIso_3166_1("BR");
-        titleDTO.setTitle("Clube da Luta");
-        titleDTO.setType("");
+        titleDTO.setId(1L);
 
         SpokenLanguageDto spokenLanguageDTO = new SpokenLanguageDto();
-        spokenLanguageDTO.setIso_639_1("en");
-        spokenLanguageDTO.setName("English");
+        spokenLanguageDTO.setId(1L);
 
         ProductionCompanyDto productionCompanyDTO = new ProductionCompanyDto();
-        productionCompanyDTO.setLogo_path(null);
-        productionCompanyDTO.setName("Fox 2000 Pictures");
-        productionCompanyDTO.setOrigin_country("");
+        productionCompanyDTO.setId(1L); 
 
         ProductionCountryDto productionCountryDTO = new ProductionCountryDto();
-        productionCountryDTO.setIso_3166_1("BR");
-        productionCountryDTO.setIso_3166_1("Brazil");
+        productionCountryDTO.setId(1L);
 
         movieDTO.setTitleDto(Collections.singletonList(titleDTO));
         movieDTO.setGenresDto(Collections.singletonList(genreDTO));

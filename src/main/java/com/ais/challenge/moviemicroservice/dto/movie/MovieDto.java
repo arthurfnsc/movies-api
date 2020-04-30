@@ -1,7 +1,10 @@
 package com.ais.challenge.moviemicroservice.dto.movie;
 
-import com.ais.challenge.moviemicroservice.dto.*;
 import com.ais.challenge.moviemicroservice.dto.genre.GenreDto;
+import com.ais.challenge.moviemicroservice.dto.production.company.ProductionCompanyDto;
+import com.ais.challenge.moviemicroservice.dto.production.country.ProductionCountryDto;
+import com.ais.challenge.moviemicroservice.dto.spokenlanguage.SpokenLanguageDto;
+import com.ais.challenge.moviemicroservice.dto.title.TitleDto;
 import com.ais.challenge.moviemicroservice.model.Movie;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -39,16 +42,17 @@ public class MovieDto {
     private String overview;
     private String status;
     private String tagline;
-    private String original_title;
-    private String original_language;
+    private String originalTitle;
+    private String originalLanguage;
 
-    private LocalDate release_date;
+    private LocalDate releaseDate;
 
 
     public MovieDto(Movie movie, List<TitleDto> titleDto, List<GenreDto> genresDto,
                     List<SpokenLanguageDto> spokenLanguageDto, List<ProductionCompanyDto> productionCompanyDto,
                     List<ProductionCountryDto> productionCountryDto) {
         this.titleDto = titleDto;
+        this.genresDto = genresDto;
         this.spokenLanguageDto = spokenLanguageDto;
         this.productionCompanyDto = productionCompanyDto;
         this.productionCountryDto = productionCountryDto;
@@ -58,7 +62,7 @@ public class MovieDto {
         this.title = movie.getTitle();
         this.budget = movie.getBudget();
         this.status = movie.getStatus();
-        this.imdb_id = movie.getImdb_id();
+        this.imdb_id = movie.getImdbId();
         this.revenue = movie.getRevenue();
         this.runtime = movie.getRuntime();
         this.tagline = movie.getTagline();
@@ -67,8 +71,8 @@ public class MovieDto {
         this.vote_count = movie.getVote_count();
         this.popularity = movie.getPopularity();
         this.vote_average = movie.getVote_average();
-        this.release_date = movie.getRelease_date();
-        this.original_title = movie.getOriginal_title();
-        this.original_language = movie.getOriginal_language();
+        this.releaseDate = movie.getReleaseDate();
+        this.originalTitle = movie.getOriginalTitle();
+        this.originalLanguage = movie.getOriginalLanguage();
     }
 }

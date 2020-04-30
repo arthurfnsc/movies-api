@@ -6,5 +6,4 @@ import com.ais.challenge.moviemicroservice.model.Movie;
 public interface MovieService {
 
     Movie save(MovieDto movieDTO);
-
 }

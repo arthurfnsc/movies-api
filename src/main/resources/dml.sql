@@ -15,9 +15,9 @@ VALUES     (1, null, 'Fox 2000 Pictures', '');
 -- SPOKEN LANGUAGE
 INSERT INTO tb_spoken_language
             (id, iso_639_1,
-             NAME) 
+             NAME)
 VALUES      (1, 'aa',
-             'Afar'); 
+             'Afar');
 
 /*INSERT INTO tb_spoken_language
             (iso_639_1,

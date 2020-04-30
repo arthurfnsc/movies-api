@@ -24,48 +24,55 @@ public class Movie implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqMovie")
     private Long id;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "TB_MOVIE_GENRE",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            joinColumns = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "genre_id", referencedColumnName = "id")})
     private List<Genre> genres;
 
+
+    //    @JsonProperty("production_companies")
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_PRODUCTION_COMPANY",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            joinColumns = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "production_company_id", referencedColumnName = "id")})
-    private List<ProductionCompany> production_companies;
+    private List<ProductionCompany> productionCompanies;
 
+    //    @JsonProperty("production_countries")
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_PRODUCTION_COUNTRY",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            joinColumns = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "production_country_id", referencedColumnName = "id")})
-    private List<ProductionCountry> production_countries;
+    private List<ProductionCountry> productionCountries;
 
+    //    @JsonProperty("spoken_languages")
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_SPOKEN_LANGUAGE",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            joinColumns = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "spoken_language_id", referencedColumnName = "id")})
-    private List<SpokenLanguage> spoken_languages;
+    private List<SpokenLanguage> spokenLanguages;
 
+    //    @JsonProperty("titles")
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_ALTERNATIVE_TITLES",
-            joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
+            joinColumns = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "title_id", referencedColumnName = "id")})
-    private List<Title> titles;
+    private List<Title> alternativeTitles;
 
     @NotNull
     private boolean adult;
 
     @NotNull
 //    @Enumerated(EnumType.STRING)
-    private String original_language;
+    private String originalLanguage;
 
     @NotNull
-    private String original_title;
+//    @JsonProperty("original_title")
+    private String originalTitle;
 
     @NotNull
-    private LocalDate release_date;
+//    @JsonProperty("release_date")
+    private LocalDate releaseDate;
 
     private Long revenue;
 
@@ -78,7 +85,8 @@ public class Movie implements Serializable {
 
     private String homepage;
 
-    private String imdb_id;
+    //    @JsonProperty("imdb_id")
+    private String imdbId;
 
     private String overview;
 

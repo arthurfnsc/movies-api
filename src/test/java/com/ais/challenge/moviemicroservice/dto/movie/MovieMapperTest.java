@@ -1,12 +1,10 @@
-package com.ais.challenge.moviemicroservice.dto.mapper;
+package com.ais.challenge.moviemicroservice.dto.movie;
 
-import com.ais.challenge.moviemicroservice.dto.ProductionCompanyDto;
-import com.ais.challenge.moviemicroservice.dto.ProductionCountryDto;
-import com.ais.challenge.moviemicroservice.dto.SpokenLanguageDto;
-import com.ais.challenge.moviemicroservice.dto.TitleDto;
+import com.ais.challenge.moviemicroservice.dto.production.company.ProductionCompanyDto;
+import com.ais.challenge.moviemicroservice.dto.production.country.ProductionCountryDto;
+import com.ais.challenge.moviemicroservice.dto.spokenlanguage.SpokenLanguageDto;
+import com.ais.challenge.moviemicroservice.dto.title.TitleDto;
 import com.ais.challenge.moviemicroservice.dto.genre.GenreDto;
-import com.ais.challenge.moviemicroservice.dto.movie.MovieDto;
-import com.ais.challenge.moviemicroservice.dto.movie.MovieMapperImpl;
 import com.ais.challenge.moviemicroservice.model.Movie;
 import org.junit.jupiter.api.Test;
 
@@ -47,9 +45,9 @@ class MovieMapperTest {
         movieDTO.setOverview("A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.");
         movieDTO.setStatus("Released");
         movieDTO.setTagline("How much can you know about yourself if you've never been in a fight?");
-        movieDTO.setOriginal_title("Fight Club");
-        movieDTO.setOriginal_language("en");
-        movieDTO.setRelease_date(LocalDate.of(2020, 4, 29));
+        movieDTO.setOriginalLanguage("Fight Club");
+        movieDTO.setOriginalLanguage("en");
+        movieDTO.setReleaseDate(LocalDate.of(2020, 4, 29));
 
         GenreDto genreDTO = new GenreDto();
         genreDTO.setName("Drama");
