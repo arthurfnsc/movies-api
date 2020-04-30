@@ -7,8 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class GenreDTO {
+public class SpokenLanguageDto {
 
+    private String iso_639_1;
     private String name;
 
 }

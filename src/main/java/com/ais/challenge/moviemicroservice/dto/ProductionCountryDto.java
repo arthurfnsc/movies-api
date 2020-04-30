@@ -7,10 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ProductionCompanyDTO {
+public class ProductionCountryDto {
 
-    private String logo_path;
+    private String iso_3166_1;
     private String name;
-    private String origin_country;
 
 }

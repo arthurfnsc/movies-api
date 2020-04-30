@@ -7,9 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class SpokenLanguageDTO {
+public class TitleDto {
 
-    private String iso_639_1;
-    private String name;
+    private String iso_3166_1;
+    private String title;
+    private String type;
 
 }

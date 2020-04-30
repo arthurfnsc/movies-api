@@ -2,6 +2,8 @@ package com.ais.challenge.moviemicroservice.controller;
 
 import com.ais.challenge.moviemicroservice.MovieMicroserviceApplication;
 import com.ais.challenge.moviemicroservice.dto.*;
+import com.ais.challenge.moviemicroservice.dto.genre.GenreDto;
+import com.ais.challenge.moviemicroservice.dto.movie.MovieDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +33,7 @@ class MovieControllerTest {
     @Test
     void save() throws Exception {
         //Given
-        MovieDTO movieDTO = buildMovieDto();
+        MovieDto movieDTO = buildMovieDto();
 
         //When & //Then
         ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
@@ -46,8 +48,8 @@ class MovieControllerTest {
 
     }
 
-    private MovieDTO buildMovieDto() {
-        MovieDTO movieDTO = new MovieDTO();
+    private MovieDto buildMovieDto() {
+        MovieDto movieDTO = new MovieDto();
         movieDTO.setAdult(false);
         movieDTO.setVideo(false);
         movieDTO.setRuntime(139);
@@ -62,32 +64,32 @@ class MovieControllerTest {
         movieDTO.setOriginal_language("en");
         movieDTO.setRelease_date(LocalDate.of(2020, 4, 29));
 
-        GenreDTO genreDTO = new GenreDTO();
+        GenreDto genreDTO = new GenreDto();
         genreDTO.setName("Drama");
 
-        TitleDTO titleDTO = new TitleDTO();
+        TitleDto titleDTO = new TitleDto();
         titleDTO.setIso_3166_1("BR");
         titleDTO.setTitle("Clube da Luta");
         titleDTO.setType("");
 
-        SpokenLanguageDTO spokenLanguageDTO = new SpokenLanguageDTO();
+        SpokenLanguageDto spokenLanguageDTO = new SpokenLanguageDto();
         spokenLanguageDTO.setIso_639_1("en");
         spokenLanguageDTO.setName("English");
 
-        ProductionCompanyDTO productionCompanyDTO = new ProductionCompanyDTO();
+        ProductionCompanyDto productionCompanyDTO = new ProductionCompanyDto();
         productionCompanyDTO.setLogo_path(null);
         productionCompanyDTO.setName("Fox 2000 Pictures");
         productionCompanyDTO.setOrigin_country("");
 
-        ProductionCountryDTO productionCountryDTO = new ProductionCountryDTO();
+        ProductionCountryDto productionCountryDTO = new ProductionCountryDto();
         productionCountryDTO.setIso_3166_1("BR");
         productionCountryDTO.setIso_3166_1("Brazil");
 
-        movieDTO.setTitleDTO(Collections.singletonList(titleDTO));
-        movieDTO.setGenresDTO(Collections.singletonList(genreDTO));
-        movieDTO.setSpokenLanguageDTO(Collections.singletonList(spokenLanguageDTO));
-        movieDTO.setProductionCompanyDTO(Collections.singletonList(productionCompanyDTO));
-        movieDTO.setProductionCountryDTO(Collections.singletonList(productionCountryDTO));
+        movieDTO.setTitleDto(Collections.singletonList(titleDTO));
+        movieDTO.setGenresDto(Collections.singletonList(genreDTO));
+        movieDTO.setSpokenLanguageDto(Collections.singletonList(spokenLanguageDTO));
+        movieDTO.setProductionCompanyDto(Collections.singletonList(productionCompanyDTO));
+        movieDTO.setProductionCountryDto(Collections.singletonList(productionCountryDTO));
 
         return movieDTO;
 

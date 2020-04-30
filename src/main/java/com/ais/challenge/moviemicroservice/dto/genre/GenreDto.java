@@ -1,15 +1,16 @@
-package com.ais.challenge.moviemicroservice.dto;
+package com.ais.challenge.moviemicroservice.dto.genre;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
-@Setter
 @NoArgsConstructor
-public class ProductionCountryDTO {
+public class GenreDto {
 
-    private String iso_3166_1;
+    private Long id;
+
+    @Setter
     private String name;
 
 }

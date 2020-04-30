@@ -1,8 +1,7 @@
 package com.ais.challenge.moviemicroservice.service.impl;
 
-import com.ais.challenge.moviemicroservice.dto.MovieDTO;
-import com.ais.challenge.moviemicroservice.dto.mapper.MovieMapper;
-import com.ais.challenge.moviemicroservice.exception.MovieAlreadyExistException;
+import com.ais.challenge.moviemicroservice.dto.movie.MovieDto;
+import com.ais.challenge.moviemicroservice.dto.movie.MovieMapper;
 import com.ais.challenge.moviemicroservice.model.Movie;
 import com.ais.challenge.moviemicroservice.repository.MovieRepository;
 import com.ais.challenge.moviemicroservice.service.MovieService;
@@ -24,9 +23,9 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     @Transactional
-    public Movie save(MovieDTO movieDTO) throws MovieAlreadyExistException {
+    public Movie save(MovieDto movieDto) {
 
-        Movie movie = mapper.mapMovie(movieDTO);
+        Movie movie = mapper.mapMovie(movieDto);
         movie = movieRepository.save(movie);
 
         return movie;

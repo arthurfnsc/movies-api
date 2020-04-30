@@ -42,8 +42,6 @@ public class Movie implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "production_country_id", referencedColumnName = "id")})
     private List<ProductionCountry> production_countries;
 
-    private Long revenue;
-
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "TB_MOVIE_SPOKEN_LANGUAGE",
             joinColumns        = {@JoinColumn(name = "movie_id", referencedColumnName = "id")},
@@ -68,6 +66,8 @@ public class Movie implements Serializable {
 
     @NotNull
     private LocalDate release_date;
+
+    private Long revenue;
 
     @NotNull
     private int runtime;
