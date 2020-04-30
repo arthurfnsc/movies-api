@@ -11,23 +11,23 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MovieMapperTest {
 
-//    @Test
-//    void mapMovie() {
-//        //Given
-//        MovieDTO movieDTO = buildMovieDto();
-//        MovieMapperImpl movieMapper = new MovieMapperImpl();
-//
-//        //When
-//        Movie movie = movieMapper.mapMovie(movieDTO);
-//
-//        //Then
-//        assertThat(movie)
-//                .isNotNull()
-//                .extracting("id", "adult", "runtime")
-//                .containsExactlyInAnyOrder(null, false, 139);
-//
-//
-//    }
+    @Test
+    void mapMovie() {
+        //Given
+        MovieDTO movieDTO = buildMovieDto();
+        MovieMapperImpl movieMapper = new MovieMapperImpl();
+
+        //When
+        Movie movie = movieMapper.mapMovie(movieDTO);
+
+        //Then
+        assertThat(movie)
+                .isNotNull()
+                .extracting("id", "adult", "runtime")
+                .containsExactlyInAnyOrder(null, false, 139);
+
+
+    }
 
     private MovieDTO buildMovieDto() {
         MovieDTO movieDTO = new MovieDTO();

@@ -2,15 +2,11 @@ package com.ais.challenge.moviemicroservice.controller;
 
 import com.ais.challenge.moviemicroservice.MovieMicroserviceApplication;
 import com.ais.challenge.moviemicroservice.dto.*;
-import com.ais.challenge.moviemicroservice.model.Movie;
-import com.ais.challenge.moviemicroservice.service.MovieService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -19,16 +15,12 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import java.time.LocalDate;
 import java.util.Collections;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @AutoConfigureMockMvc
 @SpringBootTest(classes = MovieMicroserviceApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class MovieControllerTest {
-
-    @MockBean
-    private MovieService movieService;
 
     @Autowired
     private MockMvc mockMvc;
@@ -40,26 +32,18 @@ class MovieControllerTest {
     void save() throws Exception {
         //Given
         MovieDTO movieDTO = buildMovieDto();
-        Movie movie = new Movie();
-        movie.setId(1L);
 
-        Mockito.when(movieService.save(any(MovieDTO.class)))
-                .thenReturn(movie);
-
-        //When
+        //When & //Then
         ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
                 .post("/movies")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
-                .content(objectMapper.writeValueAsBytes(movieDTO)));
+                .content(objectMapper.writeValueAsBytes(movieDTO)))
+                .andExpect(status().isCreated())
+                .andExpect(header().exists("Location"))
+                .andExpect(jsonPath("$.original_title", is("Fight Club")));
 
-
-        //Then
-        perform.andExpect(status().isCreated())
-                .andExpect(header().exists("Location"));
-//        Mockito.verify(movieService, Mockito.times(1))
-//                .save(any(MovieDTO.class));
     }
 
     private MovieDTO buildMovieDto() {

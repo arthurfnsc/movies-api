@@ -27,17 +27,10 @@ public class MovieServiceImpl implements MovieService {
     public Movie save(MovieDTO movieDTO) throws MovieAlreadyExistException {
 
         Movie movie = mapper.mapMovie(movieDTO);
-        checkIfStoreExist(movie);
-
         movie = movieRepository.save(movie);
 
         return movie;
 
     }
 
-    private void checkIfStoreExist(Movie movie) throws MovieAlreadyExistException {
-        if (movieRepository.existsById(movie.getId())) {
-            throw new MovieAlreadyExistException("MOVIE ALREADY EXISTS");
-        }
-    }
 }
