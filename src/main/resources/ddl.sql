@@ -18,28 +18,28 @@ CREATE SEQUENCE seq_production_company;
 
 CREATE TABLE tb_production_country
   (
-     id             NUMBER NOT NULL,
-     iso_3166_1     VARCHAR2 NOT NULL,
-     NAME           VARCHAR2
+     id               NUMBER NOT NULL,
+     country_iso_code VARCHAR2 NOT NULL,
+     NAME             VARCHAR2
   );
 
 CREATE SEQUENCE seq_production_country;
 
 CREATE TABLE tb_spoken_language
   (
-     id        NUMBER   NOT NULL,
-     iso_639_1 VARCHAR2 NOT NULL,
-     NAME      VARCHAR2 NOT NULL
+     id                NUMBER   NOT NULL,
+     language_iso_code VARCHAR2 NOT NULL,
+     NAME              VARCHAR2 NOT NULL
   );
 
 CREATE SEQUENCE seq_spoken_language;
 
 CREATE TABLE tb_title
   (
-     id         NUMBER   NOT NULL,
-     iso_3166_1 VARCHAR2 NOT NULL,
-     title      VARCHAR2 NOT NULL,
-     type       VARCHAR2
+     id                NUMBER   NOT NULL,
+     language_iso_code VARCHAR2 NOT NULL,
+     title             VARCHAR2 NOT NULL,
+     type              VARCHAR2
   );
 
 CREATE SEQUENCE seq_title;

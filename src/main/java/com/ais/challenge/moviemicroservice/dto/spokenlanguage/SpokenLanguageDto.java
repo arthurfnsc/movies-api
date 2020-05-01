@@ -10,7 +10,4 @@ import lombok.Setter;
 public class SpokenLanguageDto {
 
     private Long id;
-    private String iso_639_1;
-    private String name;
-
 }

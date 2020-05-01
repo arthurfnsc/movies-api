@@ -34,9 +34,10 @@ class MovieControllerTest {
     private ObjectMapper objectMapper;
 
     @Test
-    void save() throws Exception {
+    void saveMovieTest() throws Exception {
+
         //Given
-        MovieDto movieDTO = buildMovieDto();
+        MovieDto movieDto = buildMovieDto(1L);
 
         // When & //Then
         ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
@@ -44,22 +45,42 @@ class MovieControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
-                .content(objectMapper.writeValueAsBytes(movieDTO)))
+                .content(objectMapper.writeValueAsBytes(movieDto)))
                 .andExpect(status().isCreated())
                 .andExpect(header().exists("Location"))
                 .andExpect(jsonPath("$.originalTitle", is("Fight Club")));
 
     }
 
-    private MovieDto buildMovieDto() {
+    @Test
+    void saveMovieShouldFailTest() throws Exception {
+
+        //Given
+        MovieDto movieDto = buildMovieDto(2L);
+
+        ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
+                .post("/movies")
+                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                .accept(MediaType.APPLICATION_JSON)
+                .characterEncoding("UTF-8")
+        //When
+                .content(objectMapper.writeValueAsBytes(movieDto)))
+        //Then
+                .andExpect(status().isNotFound());
+
+    }
+
+    private MovieDto buildMovieDto(Long id) {
+
         MovieDto movieDTO = new MovieDto();
+
         movieDTO.setAdult(false);
         movieDTO.setVideo(false);
         movieDTO.setRuntime(139);
-        movieDTO.setVote_average(3439);
+        movieDTO.setVoteAverage(3439);
         movieDTO.setBudget(6300000L);
         movieDTO.setHomepage("");
-        movieDTO.setImdb_id("tt0137523");
+        movieDTO.setImdbId("tt0137523");
         movieDTO.setOverview("A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.");
         movieDTO.setStatus("Released");
         movieDTO.setTagline("How much can you know about yourself if you've never been in a fight?");
@@ -68,25 +89,25 @@ class MovieControllerTest {
         movieDTO.setReleaseDate(LocalDate.of(2020, 4, 29));
 
         GenreDto genreDTO = new GenreDto();
-        genreDTO.setId(1L);
+        genreDTO.setId(id);
 
         TitleDto titleDTO = new TitleDto();
-        titleDTO.setId(1L);
+        titleDTO.setId(id);
 
         SpokenLanguageDto spokenLanguageDTO = new SpokenLanguageDto();
-        spokenLanguageDTO.setId(1L);
+        spokenLanguageDTO.setId(id);
 
         ProductionCompanyDto productionCompanyDTO = new ProductionCompanyDto();
-        productionCompanyDTO.setId(1L); 
+        productionCompanyDTO.setId(id);
 
         ProductionCountryDto productionCountryDTO = new ProductionCountryDto();
-        productionCountryDTO.setId(1L);
+        productionCountryDTO.setId(id);
 
         movieDTO.setTitleDto(Collections.singletonList(titleDTO));
-        movieDTO.setGenresDto(Collections.singletonList(genreDTO));
-        movieDTO.setSpokenLanguageDto(Collections.singletonList(spokenLanguageDTO));
-        movieDTO.setProductionCompanyDto(Collections.singletonList(productionCompanyDTO));
-        movieDTO.setProductionCountryDto(Collections.singletonList(productionCountryDTO));
+        movieDTO.setGenres(Collections.singletonList(genreDTO));
+        movieDTO.setSpokenLanguages(Collections.singletonList(spokenLanguageDTO));
+        movieDTO.setProductionCompanies(Collections.singletonList(productionCompanyDTO));
+        movieDTO.setProductionCountries(Collections.singletonList(productionCountryDTO));
 
         return movieDTO;
 

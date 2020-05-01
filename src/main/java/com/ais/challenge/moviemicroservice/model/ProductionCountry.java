@@ -1,5 +1,7 @@
 package com.ais.challenge.moviemicroservice.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,11 +21,13 @@ public class ProductionCountry implements Serializable {
     private static final long serialVersionUID = 9029779452434190970L;
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqProductionCountry")
     private Long id;
 
     //TODO Add ISO 3166 1 Countries Enum
-    private String iso_3166_1;
+    @JsonProperty("iso_3166_1")
+    private String countryIsoCode;
 
     @NotNull
     private String name;

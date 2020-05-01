@@ -1,6 +1,7 @@
 package com.ais.challenge.moviemicroservice.repository;
 
 import com.ais.challenge.moviemicroservice.model.Genre;
+import io.swagger.annotations.Api;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

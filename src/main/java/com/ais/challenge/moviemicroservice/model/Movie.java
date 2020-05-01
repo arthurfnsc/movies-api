@@ -98,8 +98,8 @@ public class Movie implements Serializable {
 
     private boolean video;
 
-    private double vote_average;
+    private double voteAverage;
 
-    private int vote_count;
+    private int voteCount;
 
 }

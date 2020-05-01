@@ -15,7 +15,7 @@ VALUES     (1, null, 'Sony Pictures', '');
 -- SPOKEN LANGUAGE
 
 INSERT INTO tb_spoken_language
-            (id, iso_639_1,
+            (id, language_iso_code,
              NAME)
 VALUES      (1, 'ab',
              'Abkhazian');
@@ -25,6 +25,6 @@ VALUES      (1, 'ab',
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (1, 'Afghanistan',
              'AF');

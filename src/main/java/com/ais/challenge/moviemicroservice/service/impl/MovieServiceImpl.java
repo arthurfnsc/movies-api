@@ -10,7 +10,9 @@ import com.ais.challenge.moviemicroservice.dto.title.TitleDto;
 import com.ais.challenge.moviemicroservice.model.*;
 import com.ais.challenge.moviemicroservice.repository.*;
 import com.ais.challenge.moviemicroservice.service.MovieService;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -48,11 +50,11 @@ public class MovieServiceImpl implements MovieService {
 
         Movie movie = movieMapper.mapMovie(movieDto);
 
-        movie.setGenres(getGenres(movieDto.getGenresDto()));
+        movie.setGenres(getGenres(movieDto.getGenres()));
         movie.setAlternativeTitles(getTitles(movieDto.getTitleDto()));
-        movie.setSpokenLanguages(getSpokenLanguages(movieDto.getSpokenLanguageDto()));
-        movie.setProductionCompanies(getProductionCompanies(movieDto.getProductionCompanyDto()));
-        movie.setProductionCountries(getProductionCountries(movieDto.getProductionCountryDto()));
+        movie.setSpokenLanguages(getSpokenLanguages(movieDto.getSpokenLanguages()));
+        movie.setProductionCompanies(getProductionCompanies(movieDto.getProductionCompanies()));
+        movie.setProductionCountries(getProductionCountries(movieDto.getProductionCountries()));
 
         movie = movieRepository.save(movie);
 
@@ -66,7 +68,7 @@ public class MovieServiceImpl implements MovieService {
 
         for (GenreDto genreDto : genreDtos) {
             genre = genreRepository.findById(genreDto.getId())
-                    .orElseThrow(() -> new IllegalArgumentException("Invalid Genre Id"));
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Genre not found"));
 
             genres.add(genre);
         }
@@ -81,7 +83,7 @@ public class MovieServiceImpl implements MovieService {
 
         for (ProductionCompanyDto productionCompanyDto : productionCompanyDtos) {
             productionCompany = productionCompanyRepository.findById(productionCompanyDto.getId())
-                    .orElseThrow(() -> new IllegalArgumentException("Invalid Production Company Id"));
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid Production Company Id"));
 
             productionCompanies.add(productionCompany);
         }
@@ -96,7 +98,7 @@ public class MovieServiceImpl implements MovieService {
 
         for (ProductionCountryDto productionCountryDto : productionCountryDtos) {
             productionCountry = productionCountryRepository.findById(productionCountryDto.getId())
-                    .orElseThrow(() -> new IllegalArgumentException("Invalid Production Country Id"));
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid Production Country Id"));
 
             productionCountries.add(productionCountry);
         }
@@ -111,7 +113,7 @@ public class MovieServiceImpl implements MovieService {
 
         for (SpokenLanguageDto spokenLanguageDto : spokenLanguageDtos) {
             spokenLanguage = spokenLanguageRepository.findById(spokenLanguageDto.getId())
-                    .orElseThrow(() -> new IllegalArgumentException("Invalid Production Country Id"));
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Invalid Production Country Id"));
 
             spokenLanguages.add(spokenLanguage);
         }
@@ -124,7 +126,7 @@ public class MovieServiceImpl implements MovieService {
         Title title;
         List<Title> titles = new ArrayList<>();
 
-        if(titleDtos == null) {
+        if (titleDtos == null) {
             return null; //returns an empty array list
         }
 

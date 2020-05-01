@@ -1,5 +1,7 @@
 package com.ais.challenge.moviemicroservice.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,11 +20,13 @@ public class Title implements Serializable {
     private static final long serialVersionUID = -9135942230437730398L;
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqTitle")
     private Long id;
 
     //TODO change String type to ISO 3166 1 Enum Type
-    private String iso_3166_1;
+    @JsonProperty("iso_3166_1")
+    private String language_iso_code;
 
     private String title;
 

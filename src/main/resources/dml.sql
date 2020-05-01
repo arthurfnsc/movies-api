@@ -14,1320 +14,24 @@ VALUES     (1, null, 'Fox 2000 Pictures', '');
 
 -- SPOKEN LANGUAGE
 INSERT INTO tb_spoken_language
-            (id, iso_639_1,
+            (id, language_iso_code,
              NAME)
 VALUES      (1, 'aa',
              'Afar');
-
-/*INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ab',
-             'Abkhazian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('af',
-             'Afrikaans');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('am',
-             'Amharic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar',
-             'Arabic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-ae',
-             'Arabic (U.A.E.)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-bh',
-             'Arabic (Bahrain)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-dz',
-             'Arabic (Algeria)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-eg',
-             'Arabic (Egypt)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-iq',
-             'Arabic (Iraq)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-jo',
-             'Arabic (Jordan)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-kw',
-             'Arabic (Kuwait)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-lb',
-             'Arabic (Lebanon)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-ly',
-             'Arabic (libya)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-ma',
-             'Arabic (Morocco)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-om',
-             'Arabic (Oman)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-qa',
-             'Arabic (Qatar)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-sa',
-             'Arabic (Saudi Arabia)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-sy',
-             'Arabic (Syria)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-tn',
-             'Arabic (Tunisia)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ar-ye',
-             'Arabic (Yemen)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('as',
-             'Assamese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ay',
-             'Aymara');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('az',
-             'Azeri');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ba',
-             'Bashkir');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('be',
-             'Belarusian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('bg',
-             'Bulgarian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('bh',
-             'Bihari');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('bi',
-             'Bislama');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('bn',
-             'Bengali');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('bo',
-             'Tibetan');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('br',
-             'Breton');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ca',
-             'Catalan');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('co',
-             'Corsican');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('cs',
-             'Czech');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('cy',
-             'Welsh');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('da',
-             'Danish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('de',
-             'German');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('de-at',
-             'German (Austria)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('de-ch',
-             'German (Switzerland)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('de-li',
-             'German (Liechtenstein)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('de-lu',
-             'German (Luxembourg)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('div',
-             'Divehi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('dz',
-             'Bhutani');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('el',
-             'Greek');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en',
-             'English');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-au',
-             'English (Australia)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-bz',
-             'English (Belize)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-ca',
-             'English (Canada)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-gb',
-             'English (United Kingdom)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-ie',
-             'English (Ireland)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-jm',
-             'English (Jamaica)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-nz',
-             'English (New Zealand)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-ph',
-             'English (Philippines)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-tt',
-             'English (Trinidad)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-us',
-             'English (United States)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-za',
-             'English (South Africa)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('en-zw',
-             'English (Zimbabwe)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('eo',
-             'Esperanto');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es',
-             'Spanish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-ar',
-             'Spanish (Argentina)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-bo',
-             'Spanish (Bolivia)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-cl',
-             'Spanish (Chile)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-co',
-             'Spanish (Colombia)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-cr',
-             'Spanish (Costa Rica)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-do',
-             'Spanish (Dominican Republic)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-ec',
-             'Spanish (Ecuador)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-es',
-             'Spanish (España)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-gt',
-             'Spanish (Guatemala)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-hn',
-             'Spanish (Honduras)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-mx',
-             'Spanish (Mexico)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-ni',
-             'Spanish (Nicaragua)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-pa',
-             'Spanish (Panama)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-pe',
-             'Spanish (Peru)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-pr',
-             'Spanish (Puerto Rico)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-py',
-             'Spanish (Paraguay)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-sv',
-             'Spanish (El Salvador)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-us',
-             'Spanish (United States)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-uy',
-             'Spanish (Uruguay)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('es-ve',
-             'Spanish (Venezuela)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('et',
-             'Estonian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('eu',
-             'Basque');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fa',
-             'Farsi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fi',
-             'Finnish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fj',
-             'Fiji');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fo',
-             'Faeroese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr',
-             'French');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr-be',
-             'French (Belgium)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr-ca',
-             'French (Canada)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr-ch',
-             'French (Switzerland)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr-lu',
-             'French (Luxembourg)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fr-mc',
-             'French (Monaco)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('fy',
-             'Frisian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ga',
-             'Irish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('gd',
-             'Gaelic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('gl',
-             'Galician');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('gn',
-             'Guarani');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('gu',
-             'Gujarati');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ha',
-             'Hausa');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('he',
-             'Hebrew');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('hi',
-             'Hindi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('hr',
-             'Croatian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('hu',
-             'Hungarian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('hy',
-             'Armenian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ia',
-             'Interlingua');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('id',
-             'Indonesian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ie',
-             'Interlingue');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ik',
-             'Inupiak');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('in',
-             'Indonesian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('is',
-             'Icelandic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('it',
-             'Italian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('it-ch',
-             'Italian (Switzerland)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('iw',
-             'Hebrew');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ja',
-             'Japanese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ji',
-             'Yiddish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('jw',
-             'Javanese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ka',
-             'Georgian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('kk',
-             'Kazakh');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('kl',
-             'Greenlandic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('km',
-             'Cambodian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('kn',
-             'Kannada');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ko',
-             'Korean');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('kok',
-             'Konkani');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ks',
-             'Kashmiri');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ku',
-             'Kurdish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ky',
-             'Kirghiz');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('kz',
-             'Kyrgyz');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('la',
-             'Latin');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ln',
-             'Lingala');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('lo',
-             'Laothian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ls',
-             'Slovenian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('lt',
-             'Lithuanian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('lv',
-             'Latvian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mg',
-             'Malagasy');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mi',
-             'Maori');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mk',
-             'FYRO Macedonian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ml',
-             'Malayalam');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mn',
-             'Mongolian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mo',
-             'Moldavian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mr',
-             'Marathi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ms',
-             'Malay');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('mt',
-             'Maltese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('my',
-             'Burmese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('na',
-             'Nauru');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('nb-no',
-             'Norwegian (Bokmal)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ne',
-             'Nepali (India)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('nl',
-             'Dutch');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('nl-be',
-             'Dutch (Belgium)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('nn-no',
-             'Norwegian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('no',
-             'Norwegian (Bokmal)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('oc',
-             'Occitan');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('om',
-             '(Afan)/Oromoor/Oriya');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('or',
-             'Oriya');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('pa',
-             'Punjabi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('pl',
-             'Polish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ps',
-             'Pashto/Pushto');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('pt',
-             'Portuguese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('pt-br',
-             'Portuguese (Brazil)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('qu',
-             'Quechua');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('rm',
-             'Rhaeto-Romanic');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('rn',
-             'Kirundi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ro',
-             'Romanian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ro-md',
-             'Romanian (Moldova)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ru',
-             'Russian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ru-md',
-             'Russian (Moldova)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('rw',
-             'Kinyarwanda');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sa',
-             'Sanskrit');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sb',
-             'Sorbian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sd',
-             'Sindhi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sg',
-             'Sangro');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sh',
-             'Serbo-Croatian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('si',
-             'Singhalese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sk',
-             'Slovak');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sl',
-             'Slovenian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sm',
-             'Samoan');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sn',
-             'Shona');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('so',
-             'Somali');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sq',
-             'Albanian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sr',
-             'Serbian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ss',
-             'Siswati');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('st',
-             'Sesotho');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('su',
-             'Sundanese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sv',
-             'Swedish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sv-fi',
-             'Swedish (Finland)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sw',
-             'Swahili');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('sx',
-             'Sutu');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('syr',
-             'Syriac');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ta',
-             'Tamil');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('te',
-             'Telugu');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tg',
-             'Tajik');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('th',
-             'Thai');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ti',
-             'Tigrinya');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tk',
-             'Turkmen');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tl',
-             'Tagalog');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tn',
-             'Tswana');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('to',
-             'Tonga');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tr',
-             'Turkish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ts',
-             'Tsonga');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tt',
-             'Tatar');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('tw',
-             'Twi');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('uk',
-             'Ukrainian');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('ur',
-             'Urdu');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('us',
-             'English');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('uz',
-             'Uzbek');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('vi',
-             'Vietnamese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('vo',
-             'Volapuk');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('wo',
-             'Wolof');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('xh',
-             'Xhosa');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('yi',
-             'Yiddish');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('yo',
-             'Yoruba');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh',
-             'Chinese');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh-cn',
-             'Chinese (China)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh-hk',
-             'Chinese (Hong Kong SAR)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh-mo',
-             'Chinese (Macau SAR)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh-sg',
-             'Chinese (Singapore)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zh-tw',
-             'Chinese (Taiwan)');
-
-INSERT INTO tb_spoken_language
-            (iso_639_1,
-             NAME)
-VALUES      ('zu',
-             'Zulu');*/
 
 -- PRODUCTION COUNTRY
 
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (1, 'Afghanistan',
              'AF');
 
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (2,
              'Anland Islands',
              'AX');
@@ -1335,7 +39,7 @@ VALUES      (2,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (3,
              'Albania',
              'AL');
@@ -1343,7 +47,7 @@ VALUES      (3,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (4,
              'Algeria',
              'DZ');
@@ -1351,7 +55,7 @@ VALUES      (4,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (5,
              'AmericanSamoa',
              'AS');
@@ -1359,7 +63,7 @@ VALUES      (5,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (6,
              'Andorra',
              'AD');
@@ -1367,7 +71,7 @@ VALUES      (6,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (7,
              'Angola',
              'AO');
@@ -1375,7 +79,7 @@ VALUES      (7,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (8,
              'Anguilla',
              'AI');
@@ -1383,7 +87,7 @@ VALUES      (8,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (9,
              'Antarctica',
              'AQ');
@@ -1391,7 +95,7 @@ VALUES      (9,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (10,
              'AntiguaandBarbuda',
              'AG');
@@ -1399,7 +103,7 @@ VALUES      (10,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (11,
              'Argentina',
              'AR');
@@ -1407,7 +111,7 @@ VALUES      (11,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (12,
              'Armenia',
              'AM');
@@ -1415,7 +119,7 @@ VALUES      (12,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (13,
              'Aruba',
              'AW');
@@ -1423,7 +127,7 @@ VALUES      (13,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (14,
              'Australia',
              'AU');
@@ -1431,7 +135,7 @@ VALUES      (14,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (15,
              'Austria',
              'AT');
@@ -1439,7 +143,7 @@ VALUES      (15,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (16,
              'Azerbaijan',
              'AZ');
@@ -1447,7 +151,7 @@ VALUES      (16,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (17,
              'Bahamas',
              'BS');
@@ -1455,7 +159,7 @@ VALUES      (17,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (18,
              'Bahrain',
              'BH');
@@ -1463,7 +167,7 @@ VALUES      (18,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (19,
              'Bangladesh',
              'BD');
@@ -1471,7 +175,7 @@ VALUES      (19,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (20,
              'Barbados',
              'BB');
@@ -1479,7 +183,7 @@ VALUES      (20,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (21,
              'Belarus',
              'BY');
@@ -1487,7 +191,7 @@ VALUES      (21,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (22,
              'Belgium',
              'BE');
@@ -1495,7 +199,7 @@ VALUES      (22,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (23,
              'Belize',
              'BZ');
@@ -1503,7 +207,7 @@ VALUES      (23,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (24,
              'Benin',
              'BJ');
@@ -1511,7 +215,7 @@ VALUES      (24,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (25,
              'Bermuda',
              'BM');
@@ -1519,7 +223,7 @@ VALUES      (25,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (26,
              'Bhutan',
              'BT');
@@ -1527,7 +231,7 @@ VALUES      (26,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (27,
              'Bolivia, Plurinational State of',
              'BO');
@@ -1535,7 +239,7 @@ VALUES      (27,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (28,
              'Bonaire, Sint Eustatius and Saba',
              'BQ');
@@ -1543,7 +247,7 @@ VALUES      (28,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (29,
              'Bosnia and Herzegovina',
              'BA');
@@ -1551,7 +255,7 @@ VALUES      (29,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (30,
              'Botswana',
              'BW');
@@ -1559,7 +263,7 @@ VALUES      (30,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (31,
              'BouvetIsland',
              'BV');
@@ -1567,7 +271,7 @@ VALUES      (31,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (32,
              'Brazil',
              'BR');
@@ -1575,7 +279,7 @@ VALUES      (32,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (33,
              'British Indian Ocean Territory',
              'IO');
@@ -1583,7 +287,7 @@ VALUES      (33,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (34,
              'Brunei Darussalam',
              'BN');
@@ -1591,7 +295,7 @@ VALUES      (34,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (35,
              'Bulgaria',
              'BG');
@@ -1599,7 +303,7 @@ VALUES      (35,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (36,
              'BurkinaFaso',
              'BF');
@@ -1607,7 +311,7 @@ VALUES      (36,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (37,
              'Burundi',
              'BI');
@@ -1615,7 +319,7 @@ VALUES      (37,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (38,
              'Cambodia',
              'KH');
@@ -1623,7 +327,7 @@ VALUES      (38,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (39,
              'Cameroon',
              'CM');
@@ -1631,7 +335,7 @@ VALUES      (39,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (40,
              'Canada',
              'CA');
@@ -1639,7 +343,7 @@ VALUES      (40,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (41,
              'CapeVerde',
              'CV');
@@ -1647,7 +351,7 @@ VALUES      (41,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (42,
              'Cayman Islands',
              'KY');
@@ -1655,7 +359,7 @@ VALUES      (42,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (43,
              'Central African Republic',
              'CF');
@@ -1663,7 +367,7 @@ VALUES      (43,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (44,
              'Chad',
              'TD');
@@ -1671,7 +375,7 @@ VALUES      (44,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (45,
              'Chile',
              'CL');
@@ -1679,7 +383,7 @@ VALUES      (45,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (46,
              'China',
              'CN');
@@ -1687,7 +391,7 @@ VALUES      (46,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (47,
              'Christmas Island',
              'CX');
@@ -1695,7 +399,7 @@ VALUES      (47,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (48,
              'Cocos (Keeling) Islands',
              'CC');
@@ -1703,7 +407,7 @@ VALUES      (48,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (49,
              'Colombia',
              'CO');
@@ -1711,7 +415,7 @@ VALUES      (49,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (50,
              'Comoros',
              'KM');
@@ -1719,7 +423,7 @@ VALUES      (50,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (51,
              'Congo',
              'CG');
@@ -1727,7 +431,7 @@ VALUES      (51,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (52,
              'Congo, the Democratic Republic of the',
              'CD');
@@ -1735,7 +439,7 @@ VALUES      (52,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (53,
              'Cook Islands',
              'CK');
@@ -1743,7 +447,7 @@ VALUES      (53,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (54,
              'Costa Rica',
              'CR');
@@ -1751,7 +455,7 @@ VALUES      (54,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (55,
              'Croatia',
              'HR');
@@ -1759,7 +463,7 @@ VALUES      (55,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (56,
              'Cuba',
              'CU');
@@ -1767,7 +471,7 @@ VALUES      (56,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (57,
              'Curacstwao',
              'CW');
@@ -1775,7 +479,7 @@ VALUES      (57,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (58,
              'Cyprus',
              'CY');
@@ -1783,7 +487,7 @@ VALUES      (58,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (59,
              'Czech Republic',
              'CZ');
@@ -1791,7 +495,7 @@ VALUES      (59,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (60,
              'Denmark',
              'DK');
@@ -1799,7 +503,7 @@ VALUES      (60,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (61,
              'Djibouti',
              'DJ');
@@ -1807,7 +511,7 @@ VALUES      (61,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (62,
              'Dominica',
              'DM');
@@ -1815,7 +519,7 @@ VALUES      (62,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (63,
              'Dominican Republic',
              'DO');
@@ -1823,7 +527,7 @@ VALUES      (63,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (64,
              'Ecuador',
              'EC');
@@ -1831,7 +535,7 @@ VALUES      (64,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (65,
              'Egypt',
              'EG');
@@ -1839,7 +543,7 @@ VALUES      (65,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (66,
              'El Salvador',
              'SV');
@@ -1847,7 +551,7 @@ VALUES      (66,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (67,
              'Equatorial Guinea',
              'GQ');
@@ -1855,7 +559,7 @@ VALUES      (67,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (68,
              'Eritrea',
              'ER');
@@ -1863,7 +567,7 @@ VALUES      (68,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (69,
              'Estonia',
              'EE');
@@ -1871,7 +575,7 @@ VALUES      (69,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (70,
              'Ethiopia',
              'ET');
@@ -1879,7 +583,7 @@ VALUES      (70,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (71,
              'Falkland Islands (Malvinas)',
              'FK');
@@ -1887,7 +591,7 @@ VALUES      (71,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (72,
              'Faroe Islands',
              'FO');
@@ -1895,7 +599,7 @@ VALUES      (72,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (73,
              'Fiji',
              'FJ');
@@ -1903,7 +607,7 @@ VALUES      (73,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (74,
              'Finland',
              'FI');
@@ -1911,7 +615,7 @@ VALUES      (74,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (75,
              'France',
              'FR');
@@ -1919,7 +623,7 @@ VALUES      (75,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (76,
              'French Guiana',
              'GF');
@@ -1927,7 +631,7 @@ VALUES      (76,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (77,
              'French Polynesia',
              'PF');
@@ -1935,7 +639,7 @@ VALUES      (77,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (78,
              'French Southern Territories',
              'TF');
@@ -1943,7 +647,7 @@ VALUES      (78,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (79,
              'Gabon',
              'GA');
@@ -1951,7 +655,7 @@ VALUES      (79,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (80,
              'Gambia',
              'GM');
@@ -1959,7 +663,7 @@ VALUES      (80,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (81,
              'Georgia',
              'GE');
@@ -1967,7 +671,7 @@ VALUES      (81,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (82,
              'Germany',
              'DE');
@@ -1975,7 +679,7 @@ VALUES      (82,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (83,
              'Ghana',
              'GH');
@@ -1983,7 +687,7 @@ VALUES      (83,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (84,
              'Gibraltar',
              'GI');
@@ -1991,7 +695,7 @@ VALUES      (84,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (85,
              'Greece',
              'GR');
@@ -1999,7 +703,7 @@ VALUES      (85,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (86,
              'Greenland',
              'GL');
@@ -2007,7 +711,7 @@ VALUES      (86,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (87,
              'Grenada',
              'GD');
@@ -2015,7 +719,7 @@ VALUES      (87,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (88,
              'Guadeloupe',
              'GP');
@@ -2023,7 +727,7 @@ VALUES      (88,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (89,
              'Guam',
              'GU');
@@ -2031,7 +735,7 @@ VALUES      (89,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (90,
              'Guatemala',
              'GT');
@@ -2039,7 +743,7 @@ VALUES      (90,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (91,
              'Guernsey',
              'GG');
@@ -2047,7 +751,7 @@ VALUES      (91,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (92,
              'Guinea',
              'GN');
@@ -2055,7 +759,7 @@ VALUES      (92,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (93,
              'Guinea-Bissau',
              'GW');
@@ -2063,7 +767,7 @@ VALUES      (93,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (94,
              'Guyana',
              'GY');
@@ -2071,7 +775,7 @@ VALUES      (94,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (95,
              'Haiti',
              'HT');
@@ -2079,7 +783,7 @@ VALUES      (95,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (96,
              'Heard Island and McDonald Islands',
              'HM');
@@ -2087,7 +791,7 @@ VALUES      (96,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (97,
              'HolySee( Vatican City State)',
              'VA');
@@ -2095,7 +799,7 @@ VALUES      (97,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (98,
              'Honduras',
              'HN');
@@ -2103,7 +807,7 @@ VALUES      (98,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (99,
              'Hong Kong',
              'HK');
@@ -2111,7 +815,7 @@ VALUES      (99,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (100,
              'Hungary',
              'HU');
@@ -2119,7 +823,7 @@ VALUES      (100,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (101,
              'Iceland',
              'IS');
@@ -2127,7 +831,7 @@ VALUES      (101,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (102,
              'India',
              'IN');
@@ -2135,7 +839,7 @@ VALUES      (102,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (103,
              'Indonesia',
              'ID');
@@ -2143,7 +847,7 @@ VALUES      (103,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (104,
              'Iran, Islamic Republic of',
              'IR');
@@ -2151,7 +855,7 @@ VALUES      (104,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (105,
              'Iraq',
              'IQ');
@@ -2159,7 +863,7 @@ VALUES      (105,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (106,
              'Ireland',
              'IE');
@@ -2167,7 +871,7 @@ VALUES      (106,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (107,
              'Isle of Man',
              'IM');
@@ -2175,7 +879,7 @@ VALUES      (107,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (108,
              'Israel',
              'IL');
@@ -2183,7 +887,7 @@ VALUES      (108,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (109,
              'Italy',
              'IT');
@@ -2191,7 +895,7 @@ VALUES      (109,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (110,
              'Jamaica',
              'JM');
@@ -2199,7 +903,7 @@ VALUES      (110,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (111,
              'Japan',
              'JP');
@@ -2207,7 +911,7 @@ VALUES      (111,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (112,
              'Jersey',
              'JE');
@@ -2215,7 +919,7 @@ VALUES      (112,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (113,
              'Jordan',
              'JO');
@@ -2223,7 +927,7 @@ VALUES      (113,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (114,
              'Kazakhstan',
              'KZ');
@@ -2231,7 +935,7 @@ VALUES      (114,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (115,
              'Kenya',
              'KE');
@@ -2239,7 +943,7 @@ VALUES      (115,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (116,
              'Kiribati',
              'KI');
@@ -2247,7 +951,7 @@ VALUES      (116,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (117,
              'Korea, Democratic Peoples Republic of',
              'KP');
@@ -2255,7 +959,7 @@ VALUES      (117,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (118,
              'Korea Republic of',
              'KR');
@@ -2263,7 +967,7 @@ VALUES      (118,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (119,
              'Kuwait',
              'KW');
@@ -2271,7 +975,7 @@ VALUES      (119,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (120,
              'Kyrgyzstan',
              'KG');
@@ -2279,7 +983,7 @@ VALUES      (120,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (121,
              'Lao, Peoples Democratic Republic',
              'LA');
@@ -2287,7 +991,7 @@ VALUES      (121,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (122,
              'Latvia',
              'LV');
@@ -2295,7 +999,7 @@ VALUES      (122,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (123,
              'Lebanon',
              'LB');
@@ -2303,7 +1007,7 @@ VALUES      (123,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (124,
              'Lesotho',
              'LS');
@@ -2311,7 +1015,7 @@ VALUES      (124,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (125,
              'Liberia',
              'LR');
@@ -2319,7 +1023,7 @@ VALUES      (125,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (126,
              'Libya',
              'LY');
@@ -2327,7 +1031,7 @@ VALUES      (126,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (127,
              'Liechtenstein',
              'LI');
@@ -2335,7 +1039,7 @@ VALUES      (127,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (128,
              'Lithuania',
              'LT');
@@ -2343,7 +1047,7 @@ VALUES      (128,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (129,
              'Luxembourg',
              'LU');
@@ -2351,7 +1055,7 @@ VALUES      (129,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (130,
              'Macao',
              'MO');
@@ -2359,7 +1063,7 @@ VALUES      (130,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (131,
              'Macedonia, the Former Yugoslav Republic of',
              'MK');
@@ -2367,7 +1071,7 @@ VALUES      (131,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (132,
              'Madagascar',
              'MG');
@@ -2375,7 +1079,7 @@ VALUES      (132,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (133,
              'Malawi',
              'MW');
@@ -2383,7 +1087,7 @@ VALUES      (133,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (134,
              'Malaysia',
              'MY');
@@ -2391,7 +1095,7 @@ VALUES      (134,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (135,
              'Maldives',
              'MV');
@@ -2399,7 +1103,7 @@ VALUES      (135,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (136,
              'Mali',
              'ML');
@@ -2407,7 +1111,7 @@ VALUES      (136,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (137,
              'Malta',
              'MT');
@@ -2415,7 +1119,7 @@ VALUES      (137,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (138,
              'MarshallIslands',
              'MH');
@@ -2423,7 +1127,7 @@ VALUES      (138,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (139,
              'Martinique',
              'MQ');
@@ -2431,7 +1135,7 @@ VALUES      (139,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (140,
              'Mauritania',
              'MR');
@@ -2439,7 +1143,7 @@ VALUES      (140,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (141,
              'Mauritius',
              'MU');
@@ -2447,7 +1151,7 @@ VALUES      (141,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (142,
              'Mayotte',
              'YT');
@@ -2455,7 +1159,7 @@ VALUES      (142,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (143,
              'Mexico',
              'MX');
@@ -2463,7 +1167,7 @@ VALUES      (143,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (144,
              'Micronesia, Federated States of',
              'FM');
@@ -2471,7 +1175,7 @@ VALUES      (144,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (145,
              'Moldova, Republic of',
              'MD');
@@ -2479,7 +1183,7 @@ VALUES      (145,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (146,
              'Monaco',
              'MC');
@@ -2487,7 +1191,7 @@ VALUES      (146,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (147,
              'Mongolia',
              'MN');
@@ -2495,7 +1199,7 @@ VALUES      (147,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (148,
              'Montenegro',
              'ME');
@@ -2503,7 +1207,7 @@ VALUES      (148,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (149,
              'Montserrat',
              'MS');
@@ -2511,7 +1215,7 @@ VALUES      (149,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (150,
              'Morocco',
              'MA');
@@ -2519,7 +1223,7 @@ VALUES      (150,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (151,
              'Mozambique',
              'MZ');
@@ -2527,7 +1231,7 @@ VALUES      (151,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (152,
              'Myanmar',
              'MM');
@@ -2535,7 +1239,7 @@ VALUES      (152,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (153,
              'Namibia',
              'NA');
@@ -2543,7 +1247,7 @@ VALUES      (153,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (154,
              'Nauru',
              'NR');
@@ -2551,7 +1255,7 @@ VALUES      (154,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (155,
              'Nepal',
              'NP');
@@ -2559,7 +1263,7 @@ VALUES      (155,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (156,
              'Netherlands',
              'NL');
@@ -2567,7 +1271,7 @@ VALUES      (156,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (157,
              'NewCaledonia',
              'NC');
@@ -2575,7 +1279,7 @@ VALUES      (157,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (158,
              'NewZealand',
              'NZ');
@@ -2583,7 +1287,7 @@ VALUES      (158,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (159,
              'Nicaragua',
              'NI');
@@ -2591,7 +1295,7 @@ VALUES      (159,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (160,
              'Niger',
              'NE');
@@ -2599,7 +1303,7 @@ VALUES      (160,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (161,
              'Nigeria',
              'NG');
@@ -2607,7 +1311,7 @@ VALUES      (161,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (162,
              'Niue',
              'NU');
@@ -2615,7 +1319,7 @@ VALUES      (162,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (163,
              'Norfolk Island',
              'NF');
@@ -2623,7 +1327,7 @@ VALUES      (163,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (164,
              'Northern Mariana Islands',
              'MP');
@@ -2631,7 +1335,7 @@ VALUES      (164,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (165,
              'Norway',
              'NO');
@@ -2639,7 +1343,7 @@ VALUES      (165,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (166,
              'Oman',
              'OM');
@@ -2647,7 +1351,7 @@ VALUES      (166,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (167,
              'Pakistan',
              'PK');
@@ -2655,7 +1359,7 @@ VALUES      (167,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (168,
              'Palau',
              'PW');
@@ -2663,7 +1367,7 @@ VALUES      (168,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (169,
              'Palestine, State of',
              'PS');
@@ -2671,7 +1375,7 @@ VALUES      (169,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (170,
              'Panama',
              'PA');
@@ -2679,7 +1383,7 @@ VALUES      (170,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (171,
              'Papua New Guinea',
              'PG');
@@ -2687,7 +1391,7 @@ VALUES      (171,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (172,
              'Paraguay',
              'PY');
@@ -2695,7 +1399,7 @@ VALUES      (172,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (173,
              'Peru',
              'PE');
@@ -2703,7 +1407,7 @@ VALUES      (173,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (174,
              'Philippines',
              'PH');
@@ -2711,7 +1415,7 @@ VALUES      (174,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (175,
              'Pitcairn',
              'PN');
@@ -2719,7 +1423,7 @@ VALUES      (175,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (176,
              'Poland',
              'PL');
@@ -2727,7 +1431,7 @@ VALUES      (176,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (177,
              'Portugal',
              'PT');
@@ -2735,7 +1439,7 @@ VALUES      (177,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (178,
              'Puerto Rico',
              'PR');
@@ -2743,7 +1447,7 @@ VALUES      (178,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (179,
              'Qatar',
              'QA');
@@ -2751,7 +1455,7 @@ VALUES      (179,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (180,
              'Romania',
              'RO');
@@ -2759,7 +1463,7 @@ VALUES      (180,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (181,
              'Russian Federation',
              'RU');
@@ -2767,7 +1471,7 @@ VALUES      (181,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (182,
              'Rwanda',
              'RW');
@@ -2775,7 +1479,7 @@ VALUES      (182,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (183,
              'Saint Helena, Ascension and Trist and a Cunha',
              'SH');
@@ -2783,7 +1487,7 @@ VALUES      (183,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (184,
              'Saint Kitts and Nevis',
              'KN');
@@ -2791,7 +1495,7 @@ VALUES      (184,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (185,
              'Saint Lucia',
              'LC');
@@ -2799,7 +1503,7 @@ VALUES      (185,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (186,
              'Saint Martin (Frenchpart)',
              'MF');
@@ -2807,7 +1511,7 @@ VALUES      (186,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (187,
              'SaintPierreandMiquelon',
              'PM');
@@ -2815,7 +1519,7 @@ VALUES      (187,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (188,
              'Saint Vincent and the Grenadines',
              'VC');
@@ -2823,7 +1527,7 @@ VALUES      (188,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (189,
              'Samoa',
              'WS');
@@ -2831,7 +1535,7 @@ VALUES      (189,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (190,
              'SanMarino',
              'SM');
@@ -2839,7 +1543,7 @@ VALUES      (190,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (191,
              'Sao Tome and Principe',
              'ST');
@@ -2847,7 +1551,7 @@ VALUES      (191,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (192,
              'Saudi Arabia',
              'SA');
@@ -2855,7 +1559,7 @@ VALUES      (192,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (193,
              'Senegal',
              'SN');
@@ -2863,7 +1567,7 @@ VALUES      (193,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (194,
              'Serbia',
              'RS');
@@ -2871,7 +1575,7 @@ VALUES      (194,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (195,
              'Seychelles',
              'SC');
@@ -2879,7 +1583,7 @@ VALUES      (195,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (196,
              'SierraLeone',
              'SL');
@@ -2887,7 +1591,7 @@ VALUES      (196,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (197,
              'Singapore',
              'SG');
@@ -2895,7 +1599,7 @@ VALUES      (197,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (198,
              'Sint Maarten(Dutchpart)',
              'SX');
@@ -2903,7 +1607,7 @@ VALUES      (198,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (199,
              'Slovakia',
              'SK');
@@ -2911,7 +1615,7 @@ VALUES      (199,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (200,
              'Slovenia',
              'SI');
@@ -2919,7 +1623,7 @@ VALUES      (200,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (201,
              'Solomon Islands',
              'SB');
@@ -2927,7 +1631,7 @@ VALUES      (201,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (202,
              'Somalia',
              'SO');
@@ -2935,7 +1639,7 @@ VALUES      (202,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (203,
              'South Africa',
              'ZA');
@@ -2943,7 +1647,7 @@ VALUES      (203,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (204,
              'South Georgia and the South Sandwich Islands',
              'GS');
@@ -2951,7 +1655,7 @@ VALUES      (204,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (205,
              'South Sudan',
              'SS');
@@ -2959,7 +1663,7 @@ VALUES      (205,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (206,
              'Spain',
              'ES');
@@ -2967,7 +1671,7 @@ VALUES      (206,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (207,
              'SriLanka',
              'LK');
@@ -2975,7 +1679,7 @@ VALUES      (207,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (208,
              'Sudan',
              'SD');
@@ -2983,7 +1687,7 @@ VALUES      (208,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (209,
              'Suriname',
              'SR');
@@ -2991,7 +1695,7 @@ VALUES      (209,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (210,
              'Svalbard and Jan Mayen',
              'SJ');
@@ -2999,7 +1703,7 @@ VALUES      (210,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (211,
              'Swaziland',
              'SZ');
@@ -3007,7 +1711,7 @@ VALUES      (211,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (212,
              'Sweden',
              'SE');
@@ -3015,7 +1719,7 @@ VALUES      (212,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (213,
              'Switzerland',
              'CH');
@@ -3023,7 +1727,7 @@ VALUES      (213,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (214,
              'Syrian Arab Republic',
              'SY');
@@ -3031,7 +1735,7 @@ VALUES      (214,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (215,
              'Taiwan, Province of China',
              'TW');
@@ -3039,7 +1743,7 @@ VALUES      (215,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (216,
              'Tajikistan',
              'TJ');
@@ -3047,7 +1751,7 @@ VALUES      (216,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (217,
              'Tanzania, United Republic of',
              'TZ');
@@ -3055,7 +1759,7 @@ VALUES      (217,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (218,
              'Thailand',
              'TH');
@@ -3063,7 +1767,7 @@ VALUES      (218,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (219,
              'Timor-Leste',
              'TL');
@@ -3071,7 +1775,7 @@ VALUES      (219,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (220,
              'Togo',
              'TG');
@@ -3079,7 +1783,7 @@ VALUES      (220,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (221,
              'Tokelau',
              'TK');
@@ -3087,7 +1791,7 @@ VALUES      (221,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (222,
              'Tonga',
              'TO');
@@ -3095,7 +1799,7 @@ VALUES      (222,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (223,
              'Trinidad and Tobago',
              'TT');
@@ -3103,7 +1807,7 @@ VALUES      (223,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (224,
              'Tunisia',
              'TN');
@@ -3111,7 +1815,7 @@ VALUES      (224,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (225,
              'Turkey',
              'TR');
@@ -3119,7 +1823,7 @@ VALUES      (225,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (226,
              'Turkmenistan',
              'TM');
@@ -3127,7 +1831,7 @@ VALUES      (226,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (227,
              'Turksand Caicos Islands',
              'TC');
@@ -3135,7 +1839,7 @@ VALUES      (227,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (228,
              'Tuvalu',
              'TV');
@@ -3143,7 +1847,7 @@ VALUES      (228,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (229,
              'Uganda',
              'UG');
@@ -3151,7 +1855,7 @@ VALUES      (229,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (230,
              'Ukraine',
              'UA');
@@ -3159,7 +1863,7 @@ VALUES      (230,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (231,
              'United Arab Emirates',
              'AE');
@@ -3167,7 +1871,7 @@ VALUES      (231,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (232,
              'United Kingdom',
              'GB');
@@ -3175,7 +1879,7 @@ VALUES      (232,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (233,
              'United States',
              'US');
@@ -3183,7 +1887,7 @@ VALUES      (233,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (234,
              'United States Minor Outlying Islands',
              'UM');
@@ -3191,7 +1895,7 @@ VALUES      (234,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (235,
              'Uruguay',
              'UY');
@@ -3199,7 +1903,7 @@ VALUES      (235,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (236,
              'Uzbekistan',
              'UZ');
@@ -3207,7 +1911,7 @@ VALUES      (236,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (237,
              'Vanuatu',
              'VU');
@@ -3215,7 +1919,7 @@ VALUES      (237,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (238,
              'Venezuela, Bolivarian Republic of',
              'VE');
@@ -3223,7 +1927,7 @@ VALUES      (238,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (239,
              'VietNam',
              'VN');
@@ -3231,7 +1935,7 @@ VALUES      (239,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (240,
              'Virgin Islands, British',
              'VG');
@@ -3239,7 +1943,7 @@ VALUES      (240,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (241,
              'Virgin Islands U.S.',
              'VI');
@@ -3247,7 +1951,7 @@ VALUES      (241,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (242,
              'Wallis and Futuna',
              'WF');
@@ -3255,7 +1959,7 @@ VALUES      (242,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (243,
              'WesternSahara',
              'EH');
@@ -3263,7 +1967,7 @@ VALUES      (243,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (244,
              'Yemen',
              'YE');
@@ -3271,7 +1975,7 @@ VALUES      (244,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (245,
              'Zambia',
              'ZM');
@@ -3279,7 +1983,7 @@ VALUES      (245,
 INSERT INTO tb_production_country
             (id,
              NAME,
-             iso_3166_1)
+             country_iso_code)
 VALUES      (246,
              'Zimbabwe',
              'ZW')

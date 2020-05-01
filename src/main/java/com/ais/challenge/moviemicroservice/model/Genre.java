@@ -1,5 +1,6 @@
 package com.ais.challenge.moviemicroservice.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +20,7 @@ public class Genre implements Serializable {
     private static final long serialVersionUID = -8070511642405385975L;
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqGenre")
     private Long id;
 
