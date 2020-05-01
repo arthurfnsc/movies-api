@@ -30,7 +30,7 @@ Build the MovieAPI Project:
 $  mvn clean install
 ```
     
-## POST REQUESTS
+## POST Requests
 The MovieDTO requires that others entities* are already created.
 All simple post requests are avaiable below.
 
