@@ -20,7 +20,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import java.time.LocalDate;
 import java.util.Collections;
 
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @AutoConfigureMockMvc
@@ -34,14 +36,13 @@ class MovieControllerTest {
     private ObjectMapper objectMapper;
 
     @Test
-    void saveMovieTest() throws Exception {
+    void whenSaveMovie_thenReturnIsCreated() throws Exception {
 
         //Given
         MovieDto movieDto = buildMovieDto(1L);
 
         // When & //Then
-        ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
-                .post("/movies")
+        ResultActions perform = mockMvc.perform(post("/movies")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
@@ -53,20 +54,32 @@ class MovieControllerTest {
     }
 
     @Test
-    void saveMovieShouldFailTest() throws Exception {
+    void whenSaveMovieWrongGenreId_thenReturnNotFound() throws Exception {
 
         //Given
         MovieDto movieDto = buildMovieDto(2L);
 
-        ResultActions perform = mockMvc.perform(MockMvcRequestBuilders
-                .post("/movies")
+        ResultActions perform = mockMvc.perform(post("/movies")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
         //When
                 .content(objectMapper.writeValueAsBytes(movieDto)))
+
         //Then
                 .andExpect(status().isNotFound());
+
+    }
+
+    @Test
+    public void whenSlashMoviesSlashId_thenReturnMovieDetails() throws Exception {
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/movies/1"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status", is("Released")))
+                .andExpect(jsonPath("$.adult", is(false)))
+                .andExpect(jsonPath("$._links.genres.href", is("http://localhost/movies/1/genres")));
 
     }
 
