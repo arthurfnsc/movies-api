@@ -24,10 +24,15 @@ It provides some features related to movies. All that documented with Swagger!
 The **MovieAPI** uses some Maven provided plugins, such as MapStruct. 
 To be able to use MovieAPI, it's necessary to build the project in the first place.
 
-Build the MovieAPI Project:
+#### Build the MovieAPI Project:
 
 ```sh
 $  mvn clean install
+```
+
+#### Use the mvn Spring Boot Plugin
+```sh
+$ mvn spring-boot:run
 ```
     
 ## POST Requests
