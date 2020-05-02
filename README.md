@@ -39,7 +39,7 @@ $ mvn spring-boot:run
 The MovieDTO requires that others entities* are already created.
 All simple post requests are avaiable below.
 
-<details><summary><b>Show instructions</b></summary>
+<details><summary><b>Show instructions (Click Here)</b></summary>
 
 1. Create a Movie Genre:
 
