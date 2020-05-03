@@ -54,22 +54,12 @@ class MovieMapperTest {
         genreDTO.setId(1L);
 
         TitleDto titleDTO = new TitleDto();
-/*        titleDTO.setIso_3166_1("BR");
-        titleDTO.setTitle("Clube da Luta");
-        titleDTO.setType("");*/
 
         SpokenLanguageDto spokenLanguageDTO = new SpokenLanguageDto();
-/*        spokenLanguageDTO.setIso_639_1("en");
-        spokenLanguageDTO.setName("English");*/
 
         ProductionCompanyDto productionCompanyDTO = new ProductionCompanyDto();
-/*        productionCompanyDTO.setLogo_path(null);
-        productionCompanyDTO.setName("Fox 2000 Pictures");
-        productionCompanyDTO.setOrigin_country("");*/
 
         ProductionCountryDto productionCountryDTO = new ProductionCountryDto();
-/*        productionCountryDTO.setIso_3166_1("BR");
-        productionCountryDTO.setIso_3166_1("Brazil");*/
 
         movieDTO.setTitleDto(Collections.singletonList(titleDTO));
         movieDTO.setGenres(Collections.singletonList(genreDTO));
