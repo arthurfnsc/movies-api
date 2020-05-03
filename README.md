@@ -4,8 +4,9 @@
      alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
 The Movie API is a Spring Boot tool for Movie Lovers. 
-It provides some features related to movies. All that documented with Swagger!
+It provides some features related to movies. All that documented with [Swagger](https://filypsdias-movie-ais-api.herokuapp.com/swagger-ui.html#/)!
 
+## Why is Movie API a great API?
 * **SIMPLE** and **EFFECTIVE** configuration.
 * Fully documented with **SWAGGER**
 * **TESTED** to fit different cases
