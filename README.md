@@ -219,11 +219,12 @@ PS: Remember to run the project to be able to use it!!!
 * Mock
 * H2
 
+## Contributing
+
 <p align="center">
-  <img src="https://github.com/filypsdias/movies-api/blob/master/images/undraw_developer_activity_bv83.svg" alt="May The Force" width="738">
+  <img src="https://github.com/filypsdias/movies-api/blob/master/images/undraw_developer_activity_bv83.svg" alt="Contributing" width="738">
 </p>
 
-## Contributing
 * Fork this repo!
 * Hack away!
 * Create a new pull request using ```https://github.com/filypsdias/movies-api/compare```
