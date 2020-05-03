@@ -206,7 +206,8 @@ All simple post requests are avaiable below.
 
 ## Full Requests List
 
-A full REST Requests doc. is avaiable on http://localhost:8080/swagger-ui.html.
+* A full REST Requests doc. is avaiable locally on http://localhost:8080/swagger-ui.html
+* It can also be accessed [here](https://filypsdias-movie-ais-api.herokuapp.com/swagger-ui.html)!
 
 PS: Remember to run the project to be able to use it!!!
 
