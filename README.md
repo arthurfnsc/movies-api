@@ -78,7 +78,7 @@ All simple post requests are avaiable below.
    ```json
       {
         "iso_3166_1": "string",
-        "name": "string",
+        "name": "string"
       }
    ```
    
@@ -94,7 +94,7 @@ All simple post requests are avaiable below.
    ```json
       {
         "iso_639_1": "string",
-        "name": "string",
+        "name": "string"
       }
    ```
    
@@ -211,6 +211,10 @@ A full REST Requests doc. is avaiable on http://localhost:8080/swagger-ui.html.
 PS: Remember to run the project to be able to use it!!!
 
 ## Tecnologies
+
+<img src="https://github.com/filypsdias/movies-api/blob/master/images/techs_on_movie_api.png" align="right"
+     alt="Techs on Movies API" width="140" height="190">
+
 * Maven
 * Spring Boot
 * Spring Data
