@@ -21,7 +21,7 @@ It provides some features related to movies. All that documented with Swagger!
 
 ### Running in The First Time
 
-The **MovieAPI** uses some Maven provided plugins, such as MapStruct. 
+The **MovieAPI** uses some Maven provided plugins, such as MapStruct Plugin to auto map entities to DTOs. 
 To be able to use MovieAPI, it's necessary to build the project in the first place.
 
 #### Build the MovieAPI Project:
@@ -30,7 +30,7 @@ To be able to use MovieAPI, it's necessary to build the project in the first pla
 $  mvn clean install
 ```
 
-#### Use the mvn Spring Boot Plugin
+#### Run the project using the Maven Spring Boot Plugin
 ```sh
 $ mvn spring-boot:run
 ```
@@ -204,9 +204,19 @@ All simple post requests are avaiable below.
 </details>
 
 
-### Swagger
+## Full Requests List
 
-A full documentation is avaiable on http://localhost:8080/swagger-ui.html.
-
+A full REST Requests doc. is avaiable on http://localhost:8080/swagger-ui.html.
 
 PS: Remember to run the project to be able to use it!!!
+
+## Tecnologies
+* Maven
+* Spring Boot
+* Spring Data
+* Spring Data Rest
+* jUnit
+* Mock
+* H2
+
+## Contributing
